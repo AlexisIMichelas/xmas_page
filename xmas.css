@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url('bg.jpg') no-repeat center center/cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Great Vibes', cursive;
+}
+
+h1 {
+    color: white;
+    font-size: 5rem;
+    text-shadow: 2px 2px 10px gold, 0 0 15px white;
+    z-index: 1;
+}
+
+.snowflake {
+    position: fixed;
+    top: -10px;
+    font-size: 1.5rem;
+    color: white;
+    pointer-events: none;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
